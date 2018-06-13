@@ -31,22 +31,22 @@ First (1st time AC):
 ```java
 class Solution {
     public int[][] flipAndInvertImage(int[][] A) {
- 	if (A == null || A.length == 0) return A;
-	int n = A.length;
-	for (int row = 0; row < n; row++) {
-		// flip
-		for (int i = 0; i <= (n-1)/2; i++) {
-			int tmp = A[row][i];
-			A[row][i] = A[row][n-1-i];
-			A[row][n-1-i] = tmp;
+ 		if (A == null || A.length == 0) return A;
+		int n = A.length;
+		for (int row = 0; row < n; row++) {
+			// flip
+			for (int i = 0; i <= (n-1)/2; i++) {
+				int tmp = A[row][i];
+				A[row][i] = A[row][n-1-i];
+				A[row][n-1-i] = tmp;
+			}
+			// invert
+			for (int i= 0; i < n; i++) {
+				if (A[row][i] == 0) A[row][i] = 1;
+				else A[row][i] = 0;
+			}
 		}
-		// invert
-		for (int i= 0; i < n; i++) {
-			if (A[row][i] == 0) A[row][i] = 1;
-			else A[row][i] = 0;
-		}
-	}
-	return A;
+		return A;
     }
 }
 ```
