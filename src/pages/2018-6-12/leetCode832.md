@@ -5,8 +5,6 @@ title: "832.反转图片"
 author: "Cheng Cai"
 ---
 
-# 832.反转图片
-
 题目链接：[832.Flipping an Image](https://leetcode.com/problems/flipping-an-image/description/)
 
 ## Description
@@ -30,7 +28,7 @@ author: "Cheng Cai"
 
 ## Solutions
 First (1st time AC):
-```Java
+```java
 class Solution {
     public int[][] flipAndInvertImage(int[][] A) {
  	if (A == null || A.length == 0) return A;
@@ -54,3 +52,4 @@ class Solution {
 ```
 
 ## 出的错
+None
