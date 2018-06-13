@@ -4,7 +4,7 @@ const AboutPage = () => (
 	<div>
 	<h1>About Me</h1>
 	<p>
-	Nothing to say here about myself :)
+		I am starting my 4th year Ph.D. study with my advisor Prof. Harry Xu. Since Harry will move to UCLA this summer, I will also transfer my study from UCI to UCLA.
 	</p>
 	</div>
 )
