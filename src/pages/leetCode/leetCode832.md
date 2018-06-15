@@ -1,11 +1,11 @@
 ---
 path: "/leetCode832"
 date: "2018-06-12"
-title: "832.反转图片 (Easy, Array)"
+title: "832. 反转图片 (Easy, Array)"
 author: "Cheng Cai"
 ---
 
-题目链接：[832.Flipping an Image](https://leetcode.com/problems/flipping-an-image/description/)
+题目链接：[832. Flipping an Image](https://leetcode.com/problems/flipping-an-image/description/)
 
 ## Description
 

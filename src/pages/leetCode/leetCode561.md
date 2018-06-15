@@ -1,11 +1,11 @@
 ---
 path: "/leetCode561"
 date: "2018-06-14"
-title: "561.Array Partition 1 (Easy, Array)"
+title: "561. Array Partition 1 (Easy, Array)"
 author: "Cheng Cai"
 ---
 
-题目链接：[561.Array Partition 1](https://leetcode.com/problems/array-partition-i/description/)
+题目链接：[561. Array Partition 1](https://leetcode.com/problems/array-partition-i/description/)
 
 ## Description
 一维数组有2n个元素，两两结合，使得sum(min(a_i,b_i)), 0<=i<=n最大。

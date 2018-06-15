@@ -1,11 +1,11 @@
 ---
 path: "/leetCode766"
 date: "2018-06-14"
-title: "766.Toeplitz Matrix (Easy, Array)"
+title: "766. Toeplitz Matrix (Easy, Array)"
 author: "Cheng Cai"
 ---
 
-题目链接：[766.Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/description/)
+题目链接：[766. Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix/description/)
 
 ## Description
 二维矩阵，判断正每条正对角线里的元素是否都相等。
@@ -61,4 +61,21 @@ class Solution {
 ```
 
 ## 出的错
-None
+代码不够简练啊，虽然性能一样，还是别人写的简练，链接：[https://leetcode.com/problems/toeplitz-matrix/discuss/136997/Simple-accepted-Java-solution](https://leetcode.com/problems/toeplitz-matrix/discuss/136997/Simple-accepted-Java-solution)
+
+不需要像我那样把矩阵分为上下两半来遍历，直接遍历每个元素就可以了，因为int元素有传递性的。
+
+```java
+class Solution {
+    public boolean isToeplitzMatrix(int[][] matrix) {
+        for(int i = 0; i < matrix.length - 1; i++) {
+            for(int j = 0; j < matrix[i].length - 1; j++) {
+                if(matrix[i][j] != matrix[i+1][j+1]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+}
+```
