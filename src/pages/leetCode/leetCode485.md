@@ -16,7 +16,7 @@ author: "Cheng Cai"
 需要注意array尾部，到了最后要再判断一次，因为最后可能一直是1但是max没有被更新。
 
 ## Solutions
-First (*Wrong Answer* 少了个else！)
+First (*Wrong Answer* 少了个else！注意如果不是1的话计数器不应该再加1)
 ```java
 class Solution {
     public int findMaxConsecutiveOnes(int[] nums) {
