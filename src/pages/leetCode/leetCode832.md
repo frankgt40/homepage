@@ -1,7 +1,7 @@
 ---
 path: "/leetCode832"
 date: "2018-06-12"
-title: "832.反转图片"
+title: "832.反转图片 (Easy, Array)"
 author: "Cheng Cai"
 ---
 
