@@ -15,7 +15,7 @@ const Menu = () => (
 	<li><Link to="/">Home</Link></li>
 	<li><Link to="/about">About</Link></li>
 	<li><Link to="/publications">Publications</Link></li>
-	<li><Link to="/leetCode">刷题日记</Link></li>
+	<li><Link to="/leetCode">Blogs</Link></li>
 	</ul>
 	</div>
 )
