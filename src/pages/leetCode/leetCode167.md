@@ -26,6 +26,9 @@ Explanation: The sum of 2 and 7 is 9. Therefore index1 = 1, index2 = 2.
 ## Ideas
 First submission: use two slow and fast pointers to brute force search the result.
 
+Second submission:
+Uw... This problem is so simple that makes myself so stupid for not being to come up with this solution. Because the list is sorted, then if the sum of slow and fast pointer is larger than the target, it means the fast pointer is too large, and if the sum is smaller, then it means the slow pointer is too small. And anything between the slow and fast pointers will make the sum larger too. Because there is a solution, this method will surely produce a solution. We just need to 'squeeze' the slow and fast pointers towards the middle to find the target.
+
 ## Solutions
 First (Time Limit Exceeded)
 ```java
@@ -49,9 +52,28 @@ class Solution {
 }
 ```
 
-Second () 
+Second (AC: 0 ms) 
 ```java
-
+class Solution {
+    public int[] twoSum(int[] numbers, int target) {
+        if (null == numbers || 0 == numbers.length) return null;
+        int[] rsl = new int[2];
+        int l = 0, r = numbers.length - 1;
+        while (l < r) {
+            int sum = numbers[l] + numbers[r];
+            if (sum == target) {
+                rsl[0] = l+1;
+                rsl[1] = r+1;
+                return rsl;
+            } else if (sum < target) {
+                l++;
+            } else if (sum > target) {
+                r--;
+            }
+        }
+        return null;
+    }
+}
 ```
 
 
