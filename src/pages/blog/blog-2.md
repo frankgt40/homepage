@@ -63,3 +63,14 @@ public class Solution {
 }
 ```
 BYW, I don't think we need to memorize this solution, because it's just too abnormal.
+
+## [Power of Four]()
+[Insane solution](https://leetcode.com/problems/power-of-four/discuss/80457/Java-1-line-(cheating-for-the-purpose-of-not-using-loops)):
+```java
+public boolean isPowerOfFour(int num) {
+    return num > 0 && (num&(num-1)) == 0 && (num & 0x55555555) != 0;
+    //0x55555555 is to get rid of those power of 2 but not power of 4
+    //so that the single 1 bit always appears at the odd position 
+}
+```
+```(num&(num-1)) == 0``` means the binary format of the number must be like this: 10000 (one 1 followed by all zeros). ```(num & 0x55555555) != 0``` will ensure all the 1's of the number are in the odd positions, which means power of 4, because every time multiplies 4 means left shitting two positions.
